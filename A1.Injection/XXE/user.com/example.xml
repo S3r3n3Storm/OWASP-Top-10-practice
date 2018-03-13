@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--<?xml-stylesheet type="text/css" href="example.css"?>-->
+<!DOCTYPE all_obj SYSTEM "http://user.com/example.dtd">
+<!--<!DOCTYPE all_obj[
+<!ELEMENT all_obj (people_list,notes)>
+<!ELEMENT people_list (person*)>
+<!ELEMENT person (name, birthdate?, gender?, socialsecuritynumber?, foo?)>
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT birthdate (#PCDATA) >
+<!ELEMENT gender (#PCDATA) >
+<!ELEMENT socialsecuritynumber (#PCDATA) >
+<!ELEMENT foo (#PCDATA)>
+<!ENTITY nbsp "&#xA0;">
+<!ENTITY writer "Writer: DD">
+<!ENTITY cop "copy: Hello">
+<!ELEMENT notes (note*)>
+<!ELEMENT note (from, to, heading?, body)>
+<!ELEMENT from (#PCDATA) >
+<!ELEMENT to (#PCDATA) >
+<!ELEMENT heading (#PCDATA) >
+<!ELEMENT body (#PCDATA) >
+]>-->
+
+<!--<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE payload [
+<!ELEMENT elem1 (#PCDATA)>
+<!ENTITY pass SYSTEM "file:///etc/passwd">
+]>
+<payload>
+  <elem1>&pass;</elem1>
+</payload>
+-->
+
+<all_obj>
+  <people_list>
+     <person>
+        <name>
+           Fred Bloggs
+        </name>
+        <birthdate>
+           27/11/2008
+        </birthdate>
+        <gender>
+           Male
+        </gender>
+        <socialsecuritynumber>
+           1234567890
+        </socialsecuritynumber>
+        <foo>
+          &writer;
+          &nbsp;
+          &cop;
+        </foo>
+     </person>
+  </people_list>
+
+  <notes>
+    <note>
+      <from>
+        Jane
+      </from>
+      <to>
+        Bob
+      </to>
+      <heading>
+        Fish
+      </heading>
+      <body>
+        Seledka
+      </body>
+    </note>
+  </notes>
+</all_obj>

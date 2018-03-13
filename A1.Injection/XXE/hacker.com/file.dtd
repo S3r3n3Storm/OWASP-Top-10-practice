@@ -1,0 +1,1 @@
+<!ENTITY % one "<!ENTITY trick SYSTEM 'file:///etc/passwd'>">

