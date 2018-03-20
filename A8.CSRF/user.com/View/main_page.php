@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	  <title>Whitesquare</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 	  <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>CSRF</title>
