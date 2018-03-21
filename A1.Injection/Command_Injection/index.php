@@ -7,6 +7,8 @@ if (isset($_GET['q'])){
     if($have_dot === false){
       $file = $_GET['q'];
       system("cat $file");
+      //echo(shell_exec("cat $file"));
+      //echo(exec("cat $file"));
     }
     else {
       print("Input name without special characters");
@@ -26,6 +28,8 @@ if (isset($_POST['q'])){
     if($have_special_chars === false){
       $file = $_POST['q'];
       system("cat $file");
+      //echo(shell_exec("cat $file"));
+      //echo(exec("cat $file"));
     }
     else {
       print("Input name without special characters");
