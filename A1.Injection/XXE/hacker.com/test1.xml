@@ -1,10 +1,9 @@
-<source lang="xml"><?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book [ 
-<!ELEMENT id ANY >
-<!ENTITY <b>xxe</b> SYSTEM <b>"file:///etc/passwd</b>" >
-]>
- 
+<?xml version="1.0" encoding="UTF-8"?>
 <book>
-    <id><b>&xxe;</b></id>
-    <title>Great American Novel</title>
+    <id>1</id>
+    <title>Bar</title>
  </book>
+ <!-- This for Xinclude
+ <copyright>
+   This document is copyright &#169; 2042 Acme Content Company, Inc.
+ </copyright>-->
